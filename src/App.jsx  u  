@@ -1,0 +1,43 @@
+import {useState} from "react";
+function App() {
+  const [cuenta, setCuenta]= useState(0);
+  const [paso, setpaso] = useState("1");
+
+  const handleClick =() => {
+    console.log(paso);
+  setCuenta(cuenta - paso);
+  };
+
+const handleResetClick= () => {
+  setCuenta(0);
+  setPaso(1);
+};
+
+const handlePlusClick = () => {
+  setCuenta(cuenta + paso );
+};
+const handleInputChange = (e) => {
+  if (isNaN(e.target.value)) {
+    return;
+  } 
+  setpaso(Number(e.target.value));
+};
+  return (
+    <div className="App" >
+    >h3<Contador>/h3>
+      <hr />
+      <h2 className="text-center"></h2>
+      <hr />
+      style={{
+        display: "fley",
+        justifyContent: "flex-end",
+        marginRight:
+      }}
+  )
+
+
+
+
+
+
+}
